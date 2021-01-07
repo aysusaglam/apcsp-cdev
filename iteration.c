@@ -8,22 +8,6 @@ void getTestInput(int argc, char* argv[], int* a)
   }
 }
 
-void division()
-{
-   int div = 4;
-   printf("looking for numbers divisible by ");
-   printf("%d\n", div);
-   for (int i = 1; i < 101; i++)
-   {
-      if (i%div == 0){
-       printf("%d",i);
-       printf(" is divisible by ");
-       printf("%d\n", div);
-   }  
-  }
-}
-
-
 int main(int argc, char* argv[]) 
 {
   // the divisor variable
@@ -33,8 +17,18 @@ int main(int argc, char* argv[])
   getTestInput(argc, argv, &div);
 
 
-  // add code below to complete 2.4 for any value of div 
-  division(&div);
+  // add code below to complete 2.4 for any value of div
+  
+   printf("looking for numbers divisible by ");
+   printf("%d\n", div);
+   for (int i = 1; i < 101; i++)
+   {
+      if (i%div == 0){
+       printf("%d",i);
+       printf(" is divisible by ");
+       printf("%d\n", div);
+    }  
+  }
 }
 
 
